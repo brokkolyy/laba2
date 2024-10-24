@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Информация обо мне</title>
+</head>
+<body>
+
+    <!-- Контейнер для кнопок -->
+    <div class="button-container">
+        <button class="button" onclick="showInfo('info1')">Город</button>
+        <button class="button" onclick="showInfo('info2')">Мое обучение</button>
+        <button class="button" onclick="showInfo('info3')">Хобби</button>
+    </div>
+
+    <!-- Скрытая информация для каждой кнопки -->
+    <div id="info1" class="info">
+        <br/>
+        <p>Я родилась 18 августа 2004 года в
+            <a href="https://ru.wikipedia.org/wiki/Железногорск_(Красноярский_край)">Железногорске</a>, Красноярский край. 
+            Это маленький и закрытый город. <br/>
+            </p>
+    </div>
+
+    <div id="info2" class="info">
+            <br/>
+        <p>Окончина <a href="https://sh100-zheleznogorsk-r04.gosweb.gosuslugi.ru">МБОУ СОШ №100</a>. 
+             Также училась в <a href="https://vk.com/dhsh26">ДХШ(Детская художественная школа)</a>
+                и <a href="https://dshi-k26.ru">ДХИ(Детская школа искусств)</a>,<br/> 
+               но окончила только художественную школу, в которой проучилась 8 лет.<br/>
+                В музыкальной школе училась играть на домре и пианино, бросила обучение спустя 2 года.<br/>
+               В 10 и 11 классе мне нравилась физика, и я думала поступать на направление связанное с физикой.<br/>
+               В последний день подачи документров я решила, что пойду учиться в НГТУ на ФПМИ на контракт. <br/>
+                И в данный момент уже перевелась на бюджет.<br/>
+            </p>
+    </div>
+
+    <div id="info3" class="info">
+        <br/>
+        <p>После окончания ДХШ я начала рисовать на графическом планшете.<br/>
+            Несмотря на тот, что я бросила музыкальную школу, я продолжаю учиться играть на разных инструментах.<br/>
+            Сейчас я уже хорошо научилась играть на гитаре, также были попытки учиться на скрипке.
+        </p>
+    </div>
+
+  <script>
+        function showInfo(id) {
+            // Скрываем всю информацию
+            document.querySelectorAll('.info').forEach(function(info) {
+                info.style.display = "none";
+            });
+            // Показываем соответствующую информацию
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+

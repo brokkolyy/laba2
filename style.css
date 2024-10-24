@@ -1,0 +1,47 @@
+ /* Контейнер для кнопок */
+ .button-container {
+    display: flex;
+    flex-direction: column; /* Расположение кнопок вертикально */
+    align-items: flex-start; /* Выровнять кнопки по левому краю */
+    gap: 15px; /* Отступы между кнопками */
+    margin-top: 50px;
+    padding-left: 150px; /* Отступ слева от края страницы */
+}
+
+/* Стили для кнопок с изображением */
+.button {
+    width: 200px;
+    height: 60px;
+    background-image: url('ф.png'); /* Укажите картинку для каждой кнопки */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    color: #371A1E;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+font-family: 'Comic Sans MS', cursive;
+}
+
+/* Скрытая информация */
+.info {
+    display: none; 
+    color: #330F0A; /* Изменение цвета текста */
+    font-size: 18px; /* Размер шрифта */
+    text-align: left; /* Выравнивание по левому краю */
+    margin-top: 20px;
+    padding-left: 150px; /* Отступ слева */
+font-family: 'Comic Sans MS', cursive;
+transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('фон.png'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Изображение масштабируется, чтобы полностью покрыть фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Избегаем повторов изображения */
+    height: 100vh; /* Фон будет занимать всю высоту окна браузера */
+}
